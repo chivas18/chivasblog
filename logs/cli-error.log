@@ -1,0 +1,151 @@
+2018-05-25 09:25:19 Error: [RuntimeException] Unknown command `cake migraion`. Run `cake --help` to get the list of valid commands. in /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 321
+Stack Trace:
+#0 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php(159): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'migraion')
+#1 /Volumes/Data/chivasblog/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2018-05-25 09:25:31 Error: [RuntimeException] Unknown command `cake migraions`. Run `cake --help` to get the list of valid commands. in /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 321
+Stack Trace:
+#0 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php(159): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'migraions')
+#1 /Volumes/Data/chivasblog/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2018-05-25 10:05:53 Error: [Symfony\Component\Console\Exception\CommandNotFoundException] Command "CreatePosts" is not defined. in /Volumes/Data/chivasblog/vendor/symfony/console/Application.php on line 618
+Stack Trace:
+#0 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(229): Symfony\Component\Console\Application->find('CreatePosts')
+#1 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'CreatePosts')
+#4 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#5 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#6 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#7 /Volumes/Data/chivasblog/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#8 {main}
+
+
+2018-05-25 10:08:45 Error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [2002] No such file or directory in /Volumes/Data/chivasblog/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php on line 115
+Stack Trace:
+#0 /Volumes/Data/chivasblog/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(238): Phinx\Db\Adapter\MysqlAdapter->connect()
+#1 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/CakeAdapter.php(57): Phinx\Db\Adapter\PdoAdapter->getConnection()
+#2 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Command/CommandTrait.php(78): Migrations\CakeAdapter->__construct(Object(Phinx\Db\Adapter\MysqlAdapter), Object(Cake\Database\Connection))
+#3 /Volumes/Data/chivasblog/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(72): Migrations\Command\Migrate->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /Volumes/Data/chivasblog/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(946): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#12 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#14 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#15 /Volumes/Data/chivasblog/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2018-05-25 10:10:15 Error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [2002] No such file or directory in /Volumes/Data/chivasblog/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php on line 115
+Stack Trace:
+#0 /Volumes/Data/chivasblog/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(238): Phinx\Db\Adapter\MysqlAdapter->connect()
+#1 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/CakeAdapter.php(57): Phinx\Db\Adapter\PdoAdapter->getConnection()
+#2 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Command/CommandTrait.php(78): Migrations\CakeAdapter->__construct(Object(Phinx\Db\Adapter\MysqlAdapter), Object(Cake\Database\Connection))
+#3 /Volumes/Data/chivasblog/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(72): Migrations\Command\Migrate->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /Volumes/Data/chivasblog/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(946): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#12 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#14 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#15 /Volumes/Data/chivasblog/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2018-05-25 10:10:27 Error: [Symfony\Component\Console\Exception\RuntimeException] The "--source" option requires a value. in /Volumes/Data/chivasblog/vendor/symfony/console/Input/ArgvInput.php on line 244
+Stack Trace:
+#0 /Volumes/Data/chivasblog/vendor/symfony/console/Input/ArgvInput.php(208): Symfony\Component\Console\Input\ArgvInput->addLongOption('source', NULL)
+#1 /Volumes/Data/chivasblog/vendor/symfony/console/Input/ArgvInput.php(108): Symfony\Component\Console\Input\ArgvInput->addShortOption('s', NULL)
+#2 /Volumes/Data/chivasblog/vendor/symfony/console/Input/ArgvInput.php(84): Symfony\Component\Console\Input\ArgvInput->parseShortOption('-s')
+#3 /Volumes/Data/chivasblog/vendor/symfony/console/Input/Input.php(55): Symfony\Component\Console\Input\ArgvInput->parse()
+#4 /Volumes/Data/chivasblog/vendor/symfony/console/Command/Command.php(210): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#5 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(946): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#10 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#11 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#12 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#13 /Volumes/Data/chivasblog/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2018-05-25 10:10:49 Error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [2002] No such file or directory in /Volumes/Data/chivasblog/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php on line 115
+Stack Trace:
+#0 /Volumes/Data/chivasblog/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(238): Phinx\Db\Adapter\MysqlAdapter->connect()
+#1 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/CakeAdapter.php(57): Phinx\Db\Adapter\PdoAdapter->getConnection()
+#2 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Command/CommandTrait.php(78): Migrations\CakeAdapter->__construct(Object(Phinx\Db\Adapter\MysqlAdapter), Object(Cake\Database\Connection))
+#3 /Volumes/Data/chivasblog/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(72): Migrations\Command\Migrate->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /Volumes/Data/chivasblog/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(946): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#12 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#14 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#15 /Volumes/Data/chivasblog/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2018-05-25 10:11:53 Error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [2002] No such file or directory in /Volumes/Data/chivasblog/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php on line 115
+Stack Trace:
+#0 /Volumes/Data/chivasblog/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(238): Phinx\Db\Adapter\MysqlAdapter->connect()
+#1 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/CakeAdapter.php(57): Phinx\Db\Adapter\PdoAdapter->getConnection()
+#2 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Command/CommandTrait.php(78): Migrations\CakeAdapter->__construct(Object(Phinx\Db\Adapter\MysqlAdapter), Object(Cake\Database\Connection))
+#3 /Volumes/Data/chivasblog/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(72): Migrations\Command\Migrate->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /Volumes/Data/chivasblog/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(946): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#12 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#14 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#15 /Volumes/Data/chivasblog/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2018-05-25 10:12:00 Error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [2002] No such file or directory in /Volumes/Data/chivasblog/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php on line 115
+Stack Trace:
+#0 /Volumes/Data/chivasblog/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(238): Phinx\Db\Adapter\MysqlAdapter->connect()
+#1 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/CakeAdapter.php(57): Phinx\Db\Adapter\PdoAdapter->getConnection()
+#2 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Command/CommandTrait.php(78): Migrations\CakeAdapter->__construct(Object(Phinx\Db\Adapter\MysqlAdapter), Object(Cake\Database\Connection))
+#3 /Volumes/Data/chivasblog/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(72): Migrations\Command\Migrate->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /Volumes/Data/chivasblog/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(946): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /Volumes/Data/chivasblog/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#12 /Volumes/Data/chivasblog/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#14 /Volumes/Data/chivasblog/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#15 /Volumes/Data/chivasblog/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
