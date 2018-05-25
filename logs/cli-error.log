@@ -149,3 +149,31 @@ Stack Trace:
 #16 {main}
 
 
+2018-05-25 10:42:40 Error: [RuntimeException] Unknown command `cake migration`. Run `cake --help` to get the list of valid commands. in /Applications/AMPPS/www/chivasblog.qn/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 321
+Stack Trace:
+#0 /Applications/AMPPS/www/chivasblog.qn/vendor/cakephp/cakephp/src/Console/CommandRunner.php(159): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'migration')
+#1 /Applications/AMPPS/www/chivasblog.qn/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2018-05-25 10:42:48 Error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [2002] No such file or directory in /Applications/AMPPS/www/chivasblog.qn/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php on line 115
+Stack Trace:
+#0 /Applications/AMPPS/www/chivasblog.qn/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(238): Phinx\Db\Adapter\MysqlAdapter->connect()
+#1 /Applications/AMPPS/www/chivasblog.qn/vendor/cakephp/migrations/src/CakeAdapter.php(57): Phinx\Db\Adapter\PdoAdapter->getConnection()
+#2 /Applications/AMPPS/www/chivasblog.qn/vendor/cakephp/migrations/src/Command/CommandTrait.php(78): Migrations\CakeAdapter->__construct(Object(Phinx\Db\Adapter\MysqlAdapter), Object(Cake\Database\Connection))
+#3 /Applications/AMPPS/www/chivasblog.qn/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(72): Migrations\Command\Migrate->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /Applications/AMPPS/www/chivasblog.qn/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /Applications/AMPPS/www/chivasblog.qn/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /Applications/AMPPS/www/chivasblog.qn/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /Applications/AMPPS/www/chivasblog.qn/vendor/symfony/console/Application.php(946): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /Applications/AMPPS/www/chivasblog.qn/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /Applications/AMPPS/www/chivasblog.qn/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /Applications/AMPPS/www/chivasblog.qn/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Applications/AMPPS/www/chivasblog.qn/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#12 /Applications/AMPPS/www/chivasblog.qn/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 /Applications/AMPPS/www/chivasblog.qn/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#14 /Applications/AMPPS/www/chivasblog.qn/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#15 /Applications/AMPPS/www/chivasblog.qn/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
