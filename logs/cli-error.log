@@ -177,3 +177,39 @@ Stack Trace:
 #16 {main}
 
 
+2018-05-30 17:20:36 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caichien.pages' doesn't exist in C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'pages', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('pages', Array)
+#2 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('pages')
+#3 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(288): Cake\ORM\Table->getPrimaryKey()
+#5 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(369): Bake\Shell\Task\TemplateTask->_loadController()
+#6 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(344): Bake\Shell\Task\TemplateTask->getContent('Homes')
+#7 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(137): Bake\Shell\Task\TemplateTask->bake('Homes', true, 'Index.ctp')
+#8 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\TemplateTask->main('Pages', 'Homes', 'Index.ctp')
+#9 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#10 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#11 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#12 C:\Program Files (x86)\Ampps\www\caichien.qn\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2018-05-30 17:20:40 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'caichien.pages' doesn't exist in C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'pages', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('pages', Array)
+#2 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('pages')
+#3 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(288): Cake\ORM\Table->getPrimaryKey()
+#5 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(369): Bake\Shell\Task\TemplateTask->_loadController()
+#6 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(344): Bake\Shell\Task\TemplateTask->getContent('Homes')
+#7 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(137): Bake\Shell\Task\TemplateTask->bake('Homes', true, 'Index')
+#8 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\TemplateTask->main('Pages', 'Homes', 'Index')
+#9 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#10 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#11 C:\Program Files (x86)\Ampps\www\caichien.qn\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#12 C:\Program Files (x86)\Ampps\www\caichien.qn\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
