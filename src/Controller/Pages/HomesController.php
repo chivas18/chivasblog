@@ -9,7 +9,7 @@ use Cake\Controller\Controller;
  *
  * @method \App\Model\Entity\Pages/Home[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
-class HomesController extends AppController
+class HomesController extends PagesController
 {
 
     /**

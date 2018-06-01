@@ -77,9 +77,10 @@ Router::scope('/', ['prefix' => 'Pages'], function (RouteBuilder $routes) {
      */
     $routes->fallbacks(DashedRoute::class);
 });
+Router::scope('/admin/', ['prefix' => 'admin'], function (RouteBuilder $routes) {
+    $routes->connect('/', ['controller' => 'Homes', 'action' => 'index']);
+    $routes->connect('/:controller/:action/:id', [], ['pass' => ['id'], 'id' => '[0-9]+', 'routeClass' => DashedRoute::class]);
+    $routes->fallbacks(DashedRoute::class);
+});
 
-/**
- * Load all plugin routes. See the Plugin documentation on
- * how to customize the loading of plugin routes.
- */
 Plugin::routes();
